@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: aliceblue;
+}
+.container {
+  display: flexbox;
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  margin-top: 8%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+form {
+  text-align: left;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 0.5rem;
+  box-shadow: 1px 1px 1px 2px gray;
+}
+h1 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: linear-gradient(to right, #475cd0, #c650c3);
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.email,
+.pwd {
+  text-align: center;
+  margin-top: 1rem;
+}
+input:not(.cb) {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid grey;
+  width: 80%;
+}
+.line {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 1rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.line .rem {
+  text-align: left;
+  float: left;
+}
+.line .forgot {
+  text-align: right;
+  float: right;
+}
+.signupLink {
+  width: 15rem;
+  font-size: 10px;
+}
+.cb {
+  height: 0.5rem;
+}
+.button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  text-align: center;
+}
+button {
+  height: 1.8rem;
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border: none;
+  background: linear-gradient(to right, #475cd0, #c650c3);
+  color: white;
+}
+.signupLink {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.err {
+  font-weight: bold;
+  color: red;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
