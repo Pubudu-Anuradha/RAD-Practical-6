@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form action="/login/auth" method="post">
+          <h1>Login Form</h1>
+          <% if (err) { %>
+          <div class="err">
+            Invalid email or password. <br />
+            Please try again
+          </div>
+          <% } %>
+          <div class="email">
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="pwd">
+            <input type="password" placeholder="Password" name="pwd" id="pwd" />
+          </div>
+          <div class="line">
+            <div class="rem">
+              <input class="cb" type="checkbox" name="rem" id="rem" /> Remember
+              me
+            </div>
+            <div class="forgot">
+              <a href="#">Forgot password?</a>
+            </div>
+          </div>
+          <br />
+          <div class="button">
+            <button type="submit">Login</button>
+          </div>
+          <div class="signupLink">
+            Not a member? <a href="/register">Signup now</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
